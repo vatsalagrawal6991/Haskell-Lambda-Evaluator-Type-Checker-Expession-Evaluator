@@ -1,0 +1,2 @@
+let a:= fn (x::int) => x done
+in 10+(a 5) end ;

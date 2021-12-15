@@ -1,0 +1,4 @@
+let fibo := fn (n::int) => (fun fibo (n::int)::int => if n < 1 then 0 else if n = 1 then 1 else (fibo (n-1))+(fibo (n-2)) fi fi done n) done
+in
+(fibo 10)
+end;
