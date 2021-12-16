@@ -1,3 +1,9 @@
+# Made By Vatsal Agrawal
+# Haskell-Lambda-Evaluator-Type-Checker-Expession-Evaluator
+
+Haskell Type Language parsing, token generation, type checker, expression evaluator, lambda expression evaluator with parse tree and ast generation and error raising
+
+**************************HOW TO MAKE EXECUTABLE AND RUN PROGRAMME******************************
 For Running Programme :-
 	1) Run make command on terminal
 	or 
@@ -37,4 +43,32 @@ Output Contains
 	3) Preorder of AST
 	4) Type Checking
 	5) Final Evaluation Result
+	
+	
+Problem Statment 
+support for the following concrete syntax should be provided:
+• Anonymous function: fn (x :: typ) ⇒ exp end
+• Named function: fun hnamei(y :: typ) :: typ ⇒ exp end
+• Application: (f A)
+It is worth noticing that one cannot define a recursive function through an anonymous function.
+For this assignment, recursive functions can be implemented only through named functions.
 
+implement a type checker for this extended language.
+Each expression is either well-typed (i.e., associated with at most one type) or an exception
+must be raised. For instance, if e1 then e2 else e3 fi expression is well-typed when e1
+is a boolean type and e2 and e3 must have the same types. In order to implement the type
+checker, you must implement a type grammar (that provides you with rules that must be
+searched and a derivation has to be obtained to conclude the type checking).
+
+if the type checking goes through successfully, then perform the evaulation of an input
+program for the extended language using an evaluation strategy call-by-value. Note that for
+evaluation of an application, one will have to consider computing evironment closure (capturing
+the enclosing environment).
+
+The parser output should be  pre-order traversal of
+the AST.
+3. The type-checker output should throw appropriate exceptions, if any. For instance, when
+looking up a variable x in the environment, if no type is assigned then the typechecker should
+throw an error along the line: Var x w/o a type. Consider another example of function
+application (f 3). If the function argument for f doesn’t match the int type of 3, then the
+typechecker should throw an error along the lines: Application argument mismatch in f.
