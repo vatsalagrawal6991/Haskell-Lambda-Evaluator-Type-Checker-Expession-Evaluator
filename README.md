@@ -4,6 +4,7 @@
 Haskell Type Language parsing, token generation, type checker, expression evaluator, lambda expression evaluator with parse tree and ast generation and error raising
 
 **************************HOW TO MAKE EXECUTABLE AND RUN PROGRAMME******************************
+
 For Running Programme :-
 	1) Run make command on terminal
 	or 
@@ -46,6 +47,7 @@ Output Contains
 	
 	
 Problem Statment 
+
 support for the following concrete syntax should be provided:
 • Anonymous function: fn (x :: typ) ⇒ exp end
 • Named function: fun hnamei(y :: typ) :: typ ⇒ exp end
